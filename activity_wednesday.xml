@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.Wednesday">
+    <TextView
+        android:id="@+id/wed"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:text="   WEDNESDAY"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/wedadd"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="add class"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/wed"
+        android:layout_alignLeft="@+id/wed"
+        android:layout_alignStart="@+id/wed" />
+
+    <Button
+        android:id="@+id/view3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="41dp"
+        android:text="VIEW CLASSES"
+        android:layout_below="@+id/wedadd"
+        android:layout_alignLeft="@+id/wedadd"
+        android:layout_alignStart="@+id/wedadd" />
+
+</RelativeLayout>

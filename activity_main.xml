@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.MainActivity">
+
+    <Button
+        android:id="@+id/viewtt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="View TimeTable"
+        android:visibility="visible"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sub"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Subjects"
+        android:visibility="visible"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/viewtt"
+        android:layout_alignLeft="@+id/viewtt"
+        android:layout_alignStart="@+id/viewtt" />
+
+    <Button
+        android:id="@+id/testsech"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Test Scheduled"
+        android:visibility="visible"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/sub"
+        android:layout_alignLeft="@+id/sub"
+        android:layout_alignStart="@+id/sub" />
+
+    <Button
+        android:id="@+id/reso"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/testsech"
+        android:layout_alignStart="@+id/testsech"
+        android:layout_below="@+id/testsech"
+        android:layout_marginTop="43dp"
+        android:text="RESOURCES"
+        android:visibility="visible" />
+</RelativeLayout>

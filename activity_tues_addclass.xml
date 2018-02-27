@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.tues_addclass">
+
+    <TextView
+        android:id="@+id/tuesaddd"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="  TUESDAY"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/sub2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Subject "
+        android:layout_alignBottom="@+id/subtxt2"
+        android:layout_toLeftOf="@+id/tuesaddd"
+        android:layout_toStartOf="@+id/tuesaddd" />
+
+    <TextView
+        android:id="@+id/prof2"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/sub2"
+        android:layout_alignStart="@+id/sub2"
+        android:layout_below="@+id/sub2"
+        android:layout_marginTop="33dp"
+        android:text="Professor " />
+
+    <EditText
+        android:id="@+id/proftxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/prof2"
+        android:layout_toRightOf="@+id/prof2"
+        android:layout_toEndOf="@+id/prof2" />
+
+    <EditText
+        android:id="@+id/subtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tuesaddd"
+        android:layout_alignLeft="@+id/proftxt2"
+        android:layout_alignStart="@+id/proftxt2" />
+
+    <TextView
+        android:id="@+id/start2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prof2"
+        android:layout_alignStart="@+id/prof2"
+        android:layout_below="@+id/prof2"
+        android:layout_marginTop="43dp"
+        android:text="Start Time" />
+
+    <EditText
+        android:id="@+id/starttxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/start2"
+        android:layout_alignLeft="@+id/proftxt2"
+        android:layout_alignStart="@+id/proftxt2" />
+
+    <TextView
+        android:id="@+id/end2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start2"
+        android:layout_alignStart="@+id/start2"
+        android:layout_below="@+id/starttxt2"
+        android:layout_marginTop="29dp"
+        android:text="End Time" />
+
+    <EditText
+        android:id="@+id/endtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/starttxt2"
+        android:layout_alignStart="@+id/starttxt2"
+        android:layout_below="@+id/starttxt2"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/room2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/end2"
+        android:layout_alignStart="@+id/end2"
+        android:layout_below="@+id/endtxt2"
+        android:layout_marginTop="30dp"
+        android:text="Room Name" />
+
+    <EditText
+        android:id="@+id/roomtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room2"
+        android:layout_alignBottom="@+id/room2"
+        android:layout_alignLeft="@+id/endtxt2"
+        android:layout_alignStart="@+id/endtxt2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_alignBaseline="@+id/update2"
+        android:layout_alignBottom="@+id/update2"
+        android:layout_toLeftOf="@+id/uptxt2"
+        android:layout_toStartOf="@+id/uptxt2" />
+
+    <TextView
+        android:id="@+id/txtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room2"
+        android:layout_alignStart="@+id/room2"
+        android:layout_below="@+id/roomtxt2"
+        android:layout_marginTop="29dp"
+        android:text="CLASS" />
+
+    <EditText
+        android:id="@+id/uptxt2"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtt"
+        android:layout_alignBottom="@+id/txtt"
+        android:layout_alignLeft="@+id/roomtxt2"
+        android:layout_alignStart="@+id/roomtxt2"
+        android:ems="10"
+        android:hint="update/delete"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/update2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_below="@+id/uptxt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/delete2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_alignBaseline="@+id/update2"
+        android:layout_alignBottom="@+id/update2"
+        android:layout_toRightOf="@+id/update2"
+        android:layout_toEndOf="@+id/update2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/details2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:layout_alignTop="@+id/uptxt2"
+        android:layout_alignLeft="@+id/delete2"
+        android:layout_alignStart="@+id/delete2" />
+
+</RelativeLayout>

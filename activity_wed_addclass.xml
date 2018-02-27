@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.wed_addclass">
+    <TextView
+        android:id="@+id/wedaddd"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="  WEDNESDAY"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/sub3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Subject "
+        android:layout_alignBottom="@+id/subtxt3"
+        android:layout_toLeftOf="@+id/wedaddd"
+        android:layout_toStartOf="@+id/wedaddd" />
+
+    <TextView
+        android:id="@+id/prof3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/sub3"
+        android:layout_alignStart="@+id/sub3"
+        android:layout_below="@+id/sub3"
+        android:layout_marginTop="33dp"
+        android:text="Professor " />
+
+    <EditText
+        android:id="@+id/proftxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/prof3"
+        android:layout_toRightOf="@+id/prof3"
+        android:layout_toEndOf="@+id/prof3" />
+
+    <EditText
+        android:id="@+id/subtxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/wedaddd"
+        android:layout_alignLeft="@+id/proftxt3"
+        android:layout_alignStart="@+id/proftxt3" />
+
+    <TextView
+        android:id="@+id/start3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prof3"
+        android:layout_alignStart="@+id/prof3"
+        android:layout_below="@+id/prof3"
+        android:layout_marginTop="43dp"
+        android:text="Start Time" />
+
+    <EditText
+        android:id="@+id/starttxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/start3"
+        android:layout_alignLeft="@+id/proftxt3"
+        android:layout_alignStart="@+id/proftxt3" />
+
+    <TextView
+        android:id="@+id/end3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start3"
+        android:layout_alignStart="@+id/start3"
+        android:layout_below="@+id/starttxt3"
+        android:layout_marginTop="29dp"
+        android:text="End Time" />
+
+    <EditText
+        android:id="@+id/endtxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/starttxt3"
+        android:layout_alignStart="@+id/starttxt3"
+        android:layout_below="@+id/starttxt3"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/room3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/end3"
+        android:layout_alignStart="@+id/end3"
+        android:layout_below="@+id/endtxt3"
+        android:layout_marginTop="30dp"
+        android:text="Room Name" />
+
+    <EditText
+        android:id="@+id/roomtxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room3"
+        android:layout_alignBottom="@+id/room3"
+        android:layout_alignLeft="@+id/endtxt3"
+        android:layout_alignStart="@+id/endtxt3"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_alignBaseline="@+id/update3"
+        android:layout_alignBottom="@+id/update3"
+        android:layout_toLeftOf="@+id/uptxt3"
+        android:layout_toStartOf="@+id/uptxt3" />
+
+    <TextView
+        android:id="@+id/txtw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room3"
+        android:layout_alignStart="@+id/room3"
+        android:layout_below="@+id/roomtxt3"
+        android:layout_marginTop="29dp"
+        android:text="CLASS" />
+
+    <EditText
+        android:id="@+id/uptxt3"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="update/delete"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/txtw"
+        android:layout_alignBottom="@+id/txtw"
+        android:layout_toLeftOf="@+id/delete3"
+        android:layout_toStartOf="@+id/delete3" />
+
+
+    <Button
+        android:id="@+id/update3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_below="@+id/uptxt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/delete3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_alignBaseline="@+id/update3"
+        android:layout_alignBottom="@+id/update3"
+        android:layout_toRightOf="@+id/update3"
+        android:layout_toEndOf="@+id/update3"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/details3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:layout_alignBaseline="@+id/uptxt3"
+        android:layout_alignBottom="@+id/uptxt3"
+        android:layout_alignLeft="@+id/delete3"
+        android:layout_alignStart="@+id/delete3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+</RelativeLayout>

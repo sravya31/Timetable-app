@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.thurs_addclass">
+    <TextView
+        android:id="@+id/thursaddd"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="  THURSDAY"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/subt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Subject "
+        android:layout_alignBottom="@+id/subtxtt"
+        android:layout_toLeftOf="@+id/thursaddd"
+        android:layout_toStartOf="@+id/thursaddd" />
+
+    <TextView
+        android:id="@+id/datet"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/subt"
+        android:layout_alignStart="@+id/subt"
+        android:layout_below="@+id/subt"
+        android:layout_marginTop="33dp"
+        android:text="Professor " />
+
+    <EditText
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/datet"
+        android:layout_toRightOf="@+id/datet"
+        android:layout_toEndOf="@+id/datet" />
+
+    <EditText
+        android:id="@+id/subtxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/thursaddd"
+        android:layout_alignLeft="@+id/datetxt"
+        android:layout_alignStart="@+id/datetxt" />
+
+    <TextView
+        android:id="@+id/startt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/datet"
+        android:layout_alignStart="@+id/datet"
+        android:layout_below="@+id/datet"
+        android:layout_marginTop="43dp"
+        android:text="Start Time" />
+
+    <EditText
+        android:id="@+id/starttxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/startt"
+        android:layout_alignLeft="@+id/datetxt"
+        android:layout_alignStart="@+id/datetxt" />
+
+    <TextView
+        android:id="@+id/endt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startt"
+        android:layout_alignStart="@+id/startt"
+        android:layout_below="@+id/starttxtt"
+        android:layout_marginTop="29dp"
+        android:text="End Time" />
+
+    <EditText
+        android:id="@+id/endtxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/starttxtt"
+        android:layout_alignStart="@+id/starttxtt"
+        android:layout_below="@+id/starttxtt"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/roomt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/endt"
+        android:layout_alignStart="@+id/endt"
+        android:layout_below="@+id/endtxtt"
+        android:layout_marginTop="30dp"
+        android:text="Room Name" />
+
+    <EditText
+        android:id="@+id/roomtxtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/roomt"
+        android:layout_alignBottom="@+id/roomt"
+        android:layout_alignLeft="@+id/endtxtt"
+        android:layout_alignStart="@+id/endtxtt"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_alignBaseline="@+id/updatet"
+        android:layout_alignBottom="@+id/updatet"
+        android:layout_toLeftOf="@+id/uptxtt"
+        android:layout_toStartOf="@+id/uptxtt" />
+
+    <TextView
+        android:id="@+id/testt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CLASS"
+        android:layout_below="@+id/roomtxtt"
+        android:layout_alignLeft="@+id/roomt"
+        android:layout_alignStart="@+id/roomt" />
+
+    <EditText
+        android:id="@+id/uptxtt"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="update/delete"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/testt"
+        android:layout_alignBottom="@+id/testt"
+        android:layout_toLeftOf="@+id/deletet"
+        android:layout_toStartOf="@+id/deletet" />
+
+
+    <Button
+        android:id="@+id/updatet"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_below="@+id/uptxtt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/deletet"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_alignBaseline="@+id/updatet"
+        android:layout_alignBottom="@+id/updatet"
+        android:layout_toRightOf="@+id/updatet"
+        android:layout_toEndOf="@+id/updatet"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/detailst"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:layout_alignTop="@+id/uptxtt"
+        android:layout_alignRight="@+id/roomtxtt"
+        android:layout_alignEnd="@+id/roomtxtt" />
+</RelativeLayout>

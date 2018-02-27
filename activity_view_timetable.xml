@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.ViewTimetable">
+
+    <Button
+        android:id="@+id/monday"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="MONDAY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/tuesday"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="TUESDAY"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/monday"
+        android:layout_alignLeft="@+id/monday"
+        android:layout_alignStart="@+id/monday" />
+
+    <Button
+        android:id="@+id/wednesday"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="WEDNESDAY"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/tuesday"
+        android:layout_alignLeft="@+id/tuesday"
+        android:layout_alignStart="@+id/tuesday" />
+
+    <Button
+        android:id="@+id/thursday"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="THURSDAY"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/wednesday"
+        android:layout_alignLeft="@+id/wednesday"
+        android:layout_alignStart="@+id/wednesday" />
+
+    <Button
+        android:id="@+id/friday"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="FRIDAY"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/thursday"
+        android:layout_alignLeft="@+id/thursday"
+        android:layout_alignStart="@+id/thursday" />
+</RelativeLayout>

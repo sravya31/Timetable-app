@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.timetable.fri_addclass">
+    <TextView
+        android:id="@+id/friaddd"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="  FRIDAY"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/sub5"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Subject "
+        android:layout_alignBottom="@+id/subtxt5"
+        android:layout_toLeftOf="@+id/friaddd"
+        android:layout_toStartOf="@+id/friaddd" />
+
+    <TextView
+        android:id="@+id/prof5"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/sub5"
+        android:layout_alignStart="@+id/sub5"
+        android:layout_below="@+id/sub5"
+        android:layout_marginTop="33dp"
+        android:text="Professor " />
+
+    <EditText
+        android:id="@+id/proftxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/prof5"
+        android:layout_toRightOf="@+id/prof5"
+        android:layout_toEndOf="@+id/prof5" />
+
+    <EditText
+        android:id="@+id/subtxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/friaddd"
+        android:layout_alignLeft="@+id/proftxt5"
+        android:layout_alignStart="@+id/proftxt5" />
+
+    <TextView
+        android:id="@+id/start5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prof5"
+        android:layout_alignStart="@+id/prof5"
+        android:layout_below="@+id/prof5"
+        android:layout_marginTop="43dp"
+        android:text="Start Time" />
+
+    <EditText
+        android:id="@+id/starttxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/start5"
+        android:layout_alignLeft="@+id/proftxt5"
+        android:layout_alignStart="@+id/proftxt5" />
+
+    <TextView
+        android:id="@+id/end5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start5"
+        android:layout_alignStart="@+id/start5"
+        android:layout_below="@+id/starttxt5"
+        android:layout_marginTop="29dp"
+        android:text="End Time" />
+
+    <EditText
+        android:id="@+id/endtxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/starttxt5"
+        android:layout_alignStart="@+id/starttxt5"
+        android:layout_below="@+id/starttxt5"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/room5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/end5"
+        android:layout_alignStart="@+id/end5"
+        android:layout_below="@+id/endtxt5"
+        android:layout_marginTop="30dp"
+        android:text="Room Name" />
+
+    <EditText
+        android:id="@+id/roomtxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room5"
+        android:layout_alignBottom="@+id/room5"
+        android:layout_alignLeft="@+id/endtxt5"
+        android:layout_alignStart="@+id/endtxt5"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_alignBaseline="@+id/update5"
+        android:layout_alignBottom="@+id/update5"
+        android:layout_toLeftOf="@+id/uptxt5"
+        android:layout_toStartOf="@+id/uptxt5" />
+
+    <TextView
+        android:id="@+id/txtf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room5"
+        android:layout_alignStart="@+id/room5"
+        android:layout_below="@+id/roomtxt5"
+        android:layout_marginTop="29dp"
+        android:text="CLASS" />
+
+    <EditText
+        android:id="@+id/uptxt5"
+        style="@android:style/Widget.DeviceDefault.Light.EditText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtf"
+        android:layout_alignBottom="@+id/txtf"
+        android:layout_alignLeft="@+id/roomtxt5"
+        android:layout_alignStart="@+id/roomtxt5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:hint="update/delete"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/update5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_below="@+id/uptxt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/delete5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_alignBaseline="@+id/update5"
+        android:layout_alignBottom="@+id/update5"
+        android:layout_toRightOf="@+id/update5"
+        android:layout_toEndOf="@+id/update5"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/details5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uptxt5"
+        android:layout_alignEnd="@+id/roomtxt5"
+        android:layout_alignRight="@+id/roomtxt5"
+        android:text="DETAILS" />
+
+</RelativeLayout>
