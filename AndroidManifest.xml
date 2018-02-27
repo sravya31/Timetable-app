@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sravyanaguboyina.timetable">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewTimetable">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.ViewTimetable" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Monday">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Monday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mon_addclass">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.mon_addclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tuesday">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Tuesday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tues_addclass">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.tues_addclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Wednesday">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Wednesday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".wed_addclass">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.wed_addclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Thursday">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Thursday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".thurs_addclass">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.thurs_addclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Friday">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Friday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fri_addclass">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.fri_addclass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".testscheduled">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.testscheduled" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Newtest">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.Newtest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".viewtest">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.viewtest" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".resources">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.resources" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PDF_Activity" />
+        <activity android:name=".setalarm"
+            android:label="@string/title_activity_setalarm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.timetable.setalarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <reciever android:name=".Alarm_Receiver">
+        <service android:name=".RingtonePlayingService"
+            android:enabled="true">
+
+        </service>
+        </reciever>
+    </application>
+</manifest>
