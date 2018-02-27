@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#A74D4D"
+    >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/subl"
+        android:text="SUBJECT"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/datel"
+        android:text="DATE"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/startl"
+        android:text="START"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/endl"
+        android:text="END"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rooml"
+        android:text="VENUE"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        />
+
+</LinearLayout>
